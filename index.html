@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,700;1,700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
@@ -52,6 +53,15 @@
                     <button class="main-visual-01 main-visual-btn">
                         Авокадо
                         <span class="main-visual-span">134 руб</span>
+                        
+                    </button>
+                    <button class="main-visual-02 main-visual-btn">
+                        Картофель
+                        <span class="main-visual-span">169 руб</span>
+                    </button>
+                    <button class="main-visual-03 main-visual-btn">
+                        Томаты
+                        <span class="main-visual-span">215 руб</span>
                     </button>
                 </div>
             </div>
@@ -63,7 +73,63 @@
         <img class="section-main__image section-main__beans" src ="img/Files/beans.png" alt ="Beans">
 
     </section>
-
+    <section class="section-stock">
+        <div class="wrapper">
+            <h2 class="title">Что мы<br><span class="span">предлагаем</span></h2>
+            <p class="section-stock__text">Органика — это целостная система производства по-настоящему чистой, натуральной и полезной продукции</p>
+            <div class="slider">
+                <div class="slider-child">
+                    <div class="slider-item slider-milk">
+                        <div class="slider-text">
+                            <h3 class="slider-text__title">Молочные продукты</h3>
+                            <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                            <a class="slider-text__link" href="">Подробнее</a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="slider-child">
+                    <div class="slider-item slider-bakalea">
+                        <div class="slider-text">
+                            <h3 class="slider-text__title">Бакалея</h3>
+                            <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                            <a class="slider-text__link" href="">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-child">
+                    <div class="slider-item slider-meat">
+                        <div class="slider-text">
+                            <h3 class="slider-text__title">Мясо, птица</h3>
+                            <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                            <a class="slider-text__link" href="">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-item slider-milk">
+                    <div class="slider-text">
+                        <h3 class="slider-text__title">Молочные продукты</h3>
+                        <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                        <a class="slider-text__link" href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider-item slider-bakalea">
+                    <div class="slider-text">
+                        <h3 class="slider-text__title">Бакалея</h3>
+                        <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                        <a class="slider-text__link" href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider-item slider-meat">
+                    <div class="slider-text">
+                        <h3 class="slider-text__title">Мясо, птица</h3>
+                        <p class="slider-text__description">В наши дни появилась мода на здоровое питание, поэтому на рынке питания разработали органическое молоко. Органическое молоко является продуктом органического животноводства</p>
+                        <a class="slider-text__link" href="">Подробнее</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
 
     <main>
 
@@ -73,6 +139,34 @@
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+$('.slider').slick({
+  dots: false,
+  infinite: false,    
+  arrows: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+    </script>
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>
